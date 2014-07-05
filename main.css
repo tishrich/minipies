@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding:0;
+
+}
+
+.logo{
+	height: 100px;
+	width: 125px;
+	opacity: .55;
+}
+
+body{
+	background-image:url('imgs/blue_lrg.jpg');
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+	/*height: 833px;
+		border: 1px solid red;*/
+	height: 100%;
+	background-size: 100%;
+
+}
+.mainContainer h1 {
+	font-weight: bold;
+	font-family: 'Lobster', cursive;
+	color: white;
+	font-size: 65px;
+	margin-bottom: 20px;
+	text-shadow:
+       2px 2px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+
+}
+.mainContainer p{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #F28DB7;
+	font-size: 30px;
+	font-weight: bold;
+	border-top: 2px solid purple;
+	border-bottom: 2px solid purple;;
+	background-color: #000;
+	opacity: .75;
+	padding: 7px;
+	margin: 20px 0 10px;
+}
+
+.mainContainer .indulge{
+	background-color: purple;
+	font-family:'Lobster' , cursive;
+	color: #EEE;
+	width: 200px;
+	padding: 8px;
+	border-radius: 13px;
+	border-color: #F28DB7; 
+	font-size: 30px;
+	margin-top: 50px;
+	margin-right: 50px;
+    box-shadow:2px 2px 5px #000000;
+
+    
+}
+
+.mainContainer .text{
+	position: relative;
+    top: 125px;
+    text-align: center;
+}
+
+
+.nav li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+.rightNav {
+	float: right;
+	font-size: 22px;
+}
+.rightNav a {
+	text-decoration: none;
+	color: #EEE;
+}

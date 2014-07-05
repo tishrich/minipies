@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!--<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script> -->
+	<link rel="stylesheet" href="piepage.css"></script>
+	<script src="main.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans|Lobster' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<div class="nav">
+		<ul class="rightNav">
+			<li><a href="index.html">Home</a></li> |
+			<li><a href="#">What's Baking?</a></li> |
+			<li><a href="#">Log In</a></li> |
+			<li><a href="#">Cart</a></li> |
+			<li><a href="#">Help</a></li> 
+		</ul>
+	</div>
+		
+	<div class="header">
+		<h1>What's Baking</h1>
+	</div>
+	<div class="mainContainer">
+		<div class="product strawberry" data-product-name="strawberry">
+				<img src="imgs/strawberry_d.jpg" alt="strawberry">
+			<div class="content">
+				<h3>Strawberry Wine</h3>
+				<p>Nothing but sweet strawberries are packed in this mini pie. Best enjoyed warmed up.</p>
+				<button>Add</button>
+			</div>		
+		</div>
+
+		<div class="product blue" data-product-name="blueberry">
+				<img src="imgs/blueberry_a.jpg" alt="blueberry">
+			<div class="content"> 
+				<h3>Simply Blueberry</h3>
+				<p>Nothing but fresh blueberries are in this mini pie. With a vanilla-coconut crumble top, what's not to like?</p>
+				<button>Add</button>
+			</div>	
+		</div>
+
+		<div class="product peachy" data-product-name="peachy">
+				<img src="imgs/peach_c.jpg" alt="peachyC">
+			<div class="content">
+				<h3>Perfect Peach</h3>
+				<p>Warm peaches are packed in this mini pie. Peach lovers, this is for you.</p>
+				<button>Add</button>
+			</div>	
+		</div>
+		
+	
+	
+		<div class="product apple" data-product-name="apple">
+				<img src="imgs/apple_b.jpg" alt="apple">
+			<div class="content">
+				<h3>Crisp Apple</h3>
+				<p>A simply sweet apple pie just for you. It doesn't get any more classic than this one.</p>
+				<button>Add</button>
+			</div>	
+		</div>
+
+		<div class="product spice" data-product-name="spice">
+				<img src="imgs/allpieset_b.jpg" alt="set">
+			<div class="content">	
+				<h3>Spice of Life</h3>
+				<p>For those that love variety this Spice of Life pie set is for you. Why choose one when you can have it all?!</p>
+				<button>Add</button>
+			</div>	
+		</div>
+
+		<div class="product supreme" data-product-name="supreme">
+				<img src="imgs/peachsupreme_a.jpg" alt="peachpecan">
+			<div class="content">
+				<h3>Peach Supreme</h3>
+				<p>A little bit of this, a little bit of that. Peaches in strawberry sauce with toasted pecans. Mmmm!</p>
+				<button>Add</button>
+			</div>
+		</div>
+
+	</div>	
+	<!-- main container^ div -->
+	<!-- MODALS W/OVERLAY -->
+	<div id="overlay1">
+		<div class="productO strawberry">
+			<div class="imgHolder">
+				<img class="oimg" src="imgs/strawberry_d.jpg" rel="strawberry">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+			</div>	
+			<div class="content">
+				<h3>Strawberry Wine</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, necessitatibus, earum, vitae, facere est unde obcaecati commodi quia fuga modi sequi minima nostrum eveniet veritatis molestiae. Ipsam, sapiente, veniam, vitae aperiam quae voluptate harum animi quas molestiae consequuntur fuga iusto earum voluptatem fugiat in optio ad mollitia dicta quasi sequi.</p>
+				<button class="basket"><a href="cart.html">Add To Basket</a></button>
+				<button><a href='piePage.html' onClick='overlay1()'>Close</a></button>
+			</div>	
+		</div>	
+
+		<div class="productO blueberry">
+			<div class="imgHolder">
+				<img class="oimg" src="imgs/blueberry_a.jpg" rel="blueberry">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+			</div>	
+			<div class="content"> 
+				<h3>Simply Blueberry</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, necessitatibus, earum, vitae, facere est unde obcaecati commodi quia fuga modi sequi minima nostrum eveniet veritatis molestiae. Ipsam, sapiente, veniam, vitae aperiam quae voluptate harum animi quas molestiae consequuntur fuga iusto earum voluptatem fugiat in optio ad mollitia dicta quasi sequi.</p>
+				<button>Add To Basket</button>
+				<button><a href='piePage.html' onClick='overlay1()'>Close</a></button>
+			</div>	
+		</div>
+
+		<div class="productO peachy">
+			<div class="imgHolder">
+				<img class="oimg" src="imgs/peach_c.jpg">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+			</div>	
+			<div class="content"> 
+				<h3>Simply Blueberry</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, necessitatibus, earum, vitae, facere est unde obcaecati commodi quia fuga modi sequi minima nostrum eveniet veritatis molestiae. Ipsam, sapiente, veniam, vitae aperiam quae voluptate harum animi quas molestiae consequuntur fuga iusto earum voluptatem fugiat in optio ad mollitia dicta quasi sequi.</p>
+				<button>Add To Basket</button>
+				<button><a href='piePage.html' onClick='overlay1()'>Close</a></button>
+			</div>	
+		</div>
+
+		<div class="productO apple">
+			<div class="imgHolder">
+				<img class="oimg" src="imgs/apple_b.jpg">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+			</div>	
+			<div class="content"> 
+				<h3>Simply Blueberry</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, necessitatibus, earum, vitae, facere est unde obcaecati commodi quia fuga modi sequi minima nostrum eveniet veritatis molestiae. Ipsam, sapiente, veniam, vitae aperiam quae voluptate harum animi quas molestiae consequuntur fuga iusto earum voluptatem fugiat in optio ad mollitia dicta quasi sequi.</p>
+				<button>Add To Basket</button>
+				<button><a href='piePage.html' onClick='overlay1()'>Close</a></button>
+			</div>	
+		</div>
+
+		<div class="productO spice">
+			<div class="imgHolder">
+				<img class="oimg" src="imgs/allpieset_b.jpg">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+			</div>	
+			<div class="content"> 
+				<h3>Simply Blueberry</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, necessitatibus, earum, vitae, facere est unde obcaecati commodi quia fuga modi sequi minima nostrum eveniet veritatis molestiae. Ipsam, sapiente, veniam, vitae aperiam quae voluptate harum animi quas molestiae consequuntur fuga iusto earum voluptatem fugiat in optio ad mollitia dicta quasi sequi.</p>
+				<button>Add To Basket</button>
+				<button><a href='piePage.html' onClick='overlay1()'>Close</a></button>
+			</div>	
+		</div>
+
+		<div class="productO supreme">
+			<div class="imgHolder">
+				<img class="oimg" src="imgs/peachsupreme_a.jpg">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+				<img class="oimg1" src="imgs/allpieset_b.jpg" rel="set">
+			</div>	
+			<div class="content"> 
+				<h3>Simply Blueberry</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, necessitatibus, earum, vitae, facere est unde obcaecati commodi quia fuga modi sequi minima nostrum eveniet veritatis molestiae. Ipsam, sapiente, veniam, vitae aperiam quae voluptate harum animi quas molestiae consequuntur fuga iusto earum voluptatem fugiat in optio ad mollitia dicta quasi sequi.</p>
+				<button>Add To Basket</button>
+				<button><a href='piePage.html' onClick='overlay1()'>Close</a></button>
+			</div>	
+		</div>
+	</div>
+			
+			
+
+
+	</body>
+	</html>	
